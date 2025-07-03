@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-body">
+        <div class="power-switch-container">
+            <div id="power-switch" class="switch off">
+                <div class="handle"></div>
+            </div>
+        </div>
+        <div class="calculator">
+            <div class="display">
+                <div id="cat-container">
+                    <svg id="cat-svg" viewBox="0 0 100 100">
+                        <!-- Body -->
+                        <path d="M 20,60 A 20,20 0,1,1 80,60" fill="#f0a040"/>
+                        <!-- Head -->
+                        <circle cx="80" cy="45" r="15" fill="#f0a040"/>
+                        <!-- Ears -->
+                        <path d="M 70,32 L 75,20 L 80,32 Z" fill="#f0a040"/>
+                        <path d="M 85,32 L 90,20 L 95,32 Z" fill="#f0a040"/>
+                        <!-- Eyes -->
+                        <circle cx="76" cy="45" r="2" fill="black"/>
+                        <circle cx="84" cy="45" r="2" fill="black"/>
+                        <!-- Tail -->
+                        <path d="M 20,60 Q 10,50 15,40" stroke="#f0a040" stroke-width="5" fill="none" stroke-linecap="round"/>
+                        <!-- Legs -->
+                        <g id="legs">
+                            <path id="leg1" d="M 35,78 L 30,88" stroke="black" stroke-width="4" fill="none" stroke-linecap="round"/>
+                            <path id="leg2" d="M 55,78 L 50,88" stroke="black" stroke-width="4" fill="none" stroke-linecap="round"/>
+                            <path id="leg3" d="M 45,78 L 40,88" stroke="black" stroke-width="4" fill="none" stroke-linecap="round"/>
+                            <path id="leg4" d="M 65,78 L 60,88" stroke="black" stroke-width="4" fill="none" stroke-linecap="round"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="previous-display" id="previous-display"></div>
+                <div class="current-display" id="current-display">0</div>
+            </div>
+            <div class="buttons">
+            <button class="btn operator" data-value="AC">AC</button>
+            <button class="btn operator" data-value="DE">DE</button>
+            <button class="btn" data-value=".">.</button>
+            <button class="btn operator" data-value="/">/</button>
+
+            <button class="btn" data-value="7">7</button>
+            <button class="btn" data-value="8">8</button>
+            <button class="btn" data-value="9">9</button>
+            <button class="btn operator" data-value="*">*</button>
+
+            <button class="btn" data-value="4">4</button>
+            <button class="btn" data-value="5">5</button>
+            <button class="btn" data-value="6">6</button>
+            <button class="btn operator" data-value="-">-</button>
+
+            <button class="btn" data-value="1">1</button>
+            <button class="btn" data-value="2">2</button>
+            <button class="btn" data-value="3">3</button>
+            <button class="btn operator" data-value="+">+</button>
+
+            <button class="btn" data-value="0">0</button>
+            <button class="btn" data-value="00">00</button>
+            <button class="btn equal" data-value="=">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
